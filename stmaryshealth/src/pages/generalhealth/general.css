@@ -1,0 +1,97 @@
+#h {
+    text-align: center;
+    font-size: larger;
+    font-weight: 5px;
+    font-style: italic;
+    color: #ff6767;
+}
+#gen {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.accordion{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.accordion-button {
+    background-color: #222222 !important; /* Forces background color */
+    color: white !important; /* Ensures text color is white */
+    border: none; /* Removes any border if needed */
+    
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #111111 !important; /* Keeps it dark even when expanded */
+    color: white !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important; /* Removes Bootstrap's default focus outline */
+}
+
+.accordion-body{
+    text-align: left;
+    background-color: #222222;
+    color: white;
+}
+
+ul {
+    list-style-position: inside;
+    padding-right: 0px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+ul li {
+    padding-top: 2px;
+}
+
+@media (prefers-color-scheme: light){
+    #h {
+    text-align: center;
+    font-size: larger;
+    font-weight: 600; /* Increased for better readability */
+    font-style: italic;
+    color: #d9534f; /* Softer red for better contrast in light mode */
+}
+
+.accordion {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.accordion-button {
+    background-color: #9297fc !important; /* Light gray background */
+    color: black !important; /* Dark text for readability */
+    border: 1px solid #ddd; /* Light border for separation */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #656dfa !important; /* Slightly darker when expanded */
+    color: black !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-body {
+    text-align: left;
+    background-color: #ffffff; /* Pure white background */
+    color: black; /* Dark text for contrast */
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+ul {
+    list-style-position: inside;
+    padding-right: 30px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+ul li {
+    padding-top: 2px;
+}
+
+}
