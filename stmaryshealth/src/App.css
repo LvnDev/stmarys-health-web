@@ -22,7 +22,10 @@ main {
   flex: 1; /* Push footer to bottom */
 }
 
-
+button {
+  background-color: #242424;
+  color: white;
+}
 
 body{
   background-color: #242424;
@@ -41,6 +44,7 @@ body{
     color: #747bff;
   }
   button {
+    color: black;
     background-color: #f9f9f9;
   }
 }

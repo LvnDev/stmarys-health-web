@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Flex } from "antd";
+import Button from 'react-bootstrap/Button';
 import { InputNumber } from 'antd';
 import './bmi.css';
 
@@ -68,14 +68,16 @@ function bmi() {
                             onChange={(e) => setWeight(e.target.value)}
                         />
                         &nbsp; &nbsp;
-                        <button
-                            type="primary"
+                        <Button
+                            variant="outline-primary"
                             onClick={(e) => {
                                 e.preventDefault();
                                 CalculateBMI();
-                            }} >
+                            }}
+                        >
                             Submit
-                        </button>
+                        </Button>
+
                         <br />
                         {bmi && (
                             <div className="mt-4 text-center">

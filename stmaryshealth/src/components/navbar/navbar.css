@@ -33,7 +33,7 @@
   
   @media (prefers-color-scheme: light) {
     .navbar-custom {
-        background-color: #9297fc; 
+        background-color: #007bff; 
       }
     
       .navbar-custom .navbar-brand a {
@@ -49,13 +49,13 @@
       }
       .navbar-custom .dropdown-menu {
         color: #111111;
-        background-color: #9297fc !important; 
+        background-color: #007bff !important; 
       }
       .navbar-custom a:hover {
         color: #ffffff; 
       }
 .navbar-custom .dropdown-menu .dropdown-item:hover {
-    background-color: #656dfa !important;
+    background-color: #6db2fc !important;
     border-radius: 2px;
   }
   
