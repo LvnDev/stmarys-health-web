@@ -15,7 +15,7 @@ function NavbarComponent() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link><Link to="generalhealth">General Health</Link></Nav.Link>
+                        <Nav.Link><Link to="healthconditions">Health Conditions</Link></Nav.Link>
                         <Nav.Link><Link to="news">Health News</Link></Nav.Link>
                         <NavDropdown title="Tools" id="basic-nav-dropdown">
                             <NavDropdown.Item><Link to='/bmicalculator'>BMI Calculator</Link></NavDropdown.Item>

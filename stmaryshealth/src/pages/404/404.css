@@ -1,0 +1,8 @@
+.main{
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 99vw;
+    height: 99vh;
+}

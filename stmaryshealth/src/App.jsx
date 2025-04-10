@@ -1,38 +1,30 @@
-import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-//pages
+// pages
 import Home from './pages/home/home';
 import News from './pages/healthNews/news';
 import General from './pages/generalhealth/general';
 import BMI from './pages/bmi/bmi';
-//comps
-import Navbar from './components/navbar/navbar';
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
-//css
+import NotFound from './pages/404/404';
+// layout
+import Layout from './components/layout';
+// css
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
-      <div id="root">
-        <Navbar />
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/generalhealth" element={<General />} />
-            <Route path='/bmicalculator' element={<BMI />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/news" element={<Layout><News /></Layout>} />
+        <Route path="/healthconditions" element={<Layout><General /></Layout>} />
+        <Route path="/bmicalculator" element={<Layout><BMI /></Layout>} />
+
+        {/* 404 page - no layout empty screen*/}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </Router>
   );
 }
 
-export default App
+export default App;

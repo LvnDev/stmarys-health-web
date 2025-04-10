@@ -4,7 +4,7 @@ function general() {
     return (
         <div>
             <div id='gen'>
-                <h1>General health</h1>
+                <h1>Health Conditions</h1>
                 <p>Common illnesses are frequent health problems, 
                     ranging from short infections like colds to long-term 
                     conditions like allergies or diabetes, 
