@@ -9,7 +9,7 @@ import './navbar.css';
 
 function NavbarComponent() {
     return (
-        <Navbar expand="lg" className="navbar-custom">
+        <Navbar expand="lg" className="navbar-custom" sticky="top">
             <Container>
                 <Navbar.Brand><Link to="/">St. Mary's Health</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
