@@ -19,6 +19,7 @@ function App() {
         <Route path="/news" element={<Layout><News /></Layout>} />
         <Route path="/healthconditions" element={<Layout><General /></Layout>} />
         <Route path="/bmicalculator" element={<Layout><BMI /></Layout>} />
+        <Route path="/news" element={<Layout><News /></Layout>}/>
 
         {/* 404 page - no layout empty screen*/}
         <Route path="*" element={<NotFound />} />
