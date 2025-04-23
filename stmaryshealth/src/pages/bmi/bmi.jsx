@@ -82,7 +82,6 @@ function bmi() {
                         {bmi && (
                             <div className="mt-4 text-center">
                                 <p className="text-xl">Your BMI is: <strong>{bmi}</strong></p>
-                                <p className="text-xl">Your BMI is: <strong>{bmi}</strong></p>
                                 <p className="text-lg">Category: <strong>{cat}</strong></p>
                             </div>
                         )}

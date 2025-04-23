@@ -3,7 +3,8 @@ import './footer.css';
 function footer(){
     return(
         <div className="footer">
-            <h1>footer</h1>
+            <h5>St Mary's Health 2025 ©</h5>
+            
         </div>
     )
 }

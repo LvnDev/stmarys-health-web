@@ -1,13 +1,80 @@
-.main-top{
-    margin-right: 10%;
-    margin-left: 10%;
-}
-.main-bot{
-    margin-right: 10%;
-    margin-left: 5%;
-    text-align: left;
-}
-ul {
-    list-style: square;
-    
-}
+/* Base layout */
+.main-top {
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .main-bot {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+    overflow-x: hidden; /* Prevent any overflow */
+  }
+  
+  /* Health section layout */
+  .health-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  /* Columns */
+  .text-column {
+    flex: 1 1 55%;
+    box-sizing: border-box;
+  }
+  
+  .image-column {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  
+  .image-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  
+  /* List styling */
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+    line-height: 1.7;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .health-section {
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    .image-column {
+      order: -1; /* Put image above text */
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  
+    .image-column img {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .text-column,
+    .image-column {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
