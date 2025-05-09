@@ -20,9 +20,6 @@ function NavbarComponent() {
                         <NavDropdown title="Tools" id="basic-nav-dropdown">
                             <NavDropdown.Item><Link to='/bmicalculator'>BMI Calculator</Link></NavDropdown.Item>
                             <NavDropdown.Item><Link to='/nutrition'>Nutritional Look Info</Link></NavDropdown.Item>
-                            <NavDropdown.Item><Link to='/'>Symptom Lookup</Link></NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item><Link to='/'>About Tools</Link></NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
